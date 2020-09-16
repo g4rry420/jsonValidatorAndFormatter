@@ -1,3 +1,6 @@
+:root{
+  --mainT: all 0.4 linear;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background: rgb(170,102,238);
+  background: linear-gradient(90deg, rgba(170,102,238,1) 0%, rgba(76,193,211,1) 100%);
 }

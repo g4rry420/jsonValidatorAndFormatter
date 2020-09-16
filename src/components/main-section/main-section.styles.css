@@ -1,0 +1,147 @@
+.textarea-container{
+    width: 62%;
+    margin: 0 auto;
+}
+.textarea-container .rownr {
+    overflow-y: hidden; 
+    color: #666; 
+    text-align: right; 
+    vertical-align:top;
+    width: 6%;
+    border: none;
+    box-shadow: none;
+    height: 340px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    resize: none;
+}
+.textarea-container .txt {
+    width: 94%; 
+    overflow: auto;
+    height: 340px;
+    border: 1px solid white;
+    padding-left: 10px;
+    box-shadow: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #666;
+    resize: none;
+}
+.textarea-container input{
+    border-style: none;
+    background: transparent;
+    color: white;
+}
+.btn-process{
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+.btn-process:hover{
+    background: linear-gradient(90deg, rgba(170,102,238,1) 0%, rgba(76,193,211,1) 100%);
+    color: white;
+    transition: var(--mainT);
+}
+.btn-process:focus{
+    box-shadow: none;
+}
+.resultContainer{
+    overflow: auto;
+    background: white;
+    height: 340px;
+    width: 100%;
+    border-radius: 5px;
+    color: #666;
+    padding: 10px;
+}
+.error-text{
+    background-color: #c0392b;
+    color: white;
+    font-weight: 600;
+}
+.resultMainContainer{
+    display: none;
+}
+.main-message{
+    background: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.main-message .message-heading{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.error-message{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.color-error{
+    color: #c0392b;
+}
+.color-valid{
+    color: #27ae60;
+}
+.active-resultMainContainer{
+    display: initial;
+}
+.user-textarea-container{
+    position: relative;
+}
+.user-textarea-container svg{
+    color:black;
+    position: absolute;
+    cursor: pointer;
+}
+.user-textarea-container .bi-trash{
+    bottom: 30%;
+    right: 3%;
+    font-size: 1.2rem;
+}
+.user-textarea-container .bi-file-earmark-code{
+    bottom: 200%;
+    right: 20px;
+    font-size: 1.3rem;
+}
+.user-textarea-container span{
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(40, 40, 40, 0.7);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    box-shadow: 1px 1px 2px 2px rgba(4, 4, 4, 0.1);
+    z-index: 10;
+}
+.user-textarea-container span::after{
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(40, 40, 40, 0.7);
+}
+.user-textarea-container .clear-span{
+    bottom: 0;
+    right: 7%;
+}
+.user-textarea-container .bi-trash:hover + .clear-span, .user-textarea-container .bi-file-earmark-code:hover + .load-file{
+    visibility: visible;
+}
+.user-textarea-container .load-file{
+    bottom: 175%;
+    right: 7%;
+}
+.user-textarea-container #jsonFile {
+    display: none;
+}
+.string { color: green; }
+.number { color: darkorange; }
+.boolean { color: blue; }
+.null { color: magenta; }
+.key { color: red; }
